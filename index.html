@@ -37,7 +37,7 @@
       <div class="navbar-inner">
         <div class="container">
        
-          <a class="brand" href="#">New project</a>
+	      <a class="brand yes2web" href="#"><img src="./assets/img/yes2web.png"></a>
           <div class="nav-collapse">
             <ul class="nav">
               <li><a href="#overview">Overview</a></li>
@@ -45,68 +45,54 @@
               <li><a href="#notes">Notes</a></li>
             </ul>
           </div><!--/.nav-collapse -->
-          <ul class="nav pull-right">
-              <li><a class="brand yes2web" href="#"><img src="./assets/img/yes2web.png"></a></li>
-          </ul>          
+				  <ul class="nav pull-right">
+          		<li><button class="btn btn-success" type="submit">Save</button></li>
+          </ul>      
         </div>
       </div>
     </div>
 
     <div class="container">
     
-    <section id="initial">
+    <section id="overview">
+   		<div class="row"><h2>Project overview</h2></div>
       <div class="row">
-      	<div class="span2">&nbsp;</div>
+      	<!-- <div class="span2">&nbsp;</div> -->
       	<div class="span8">
-      		<h1>Hello, how are you?</h1>
-        	<p>What would you like to do now?</p>
+        		<form class="well">
+							<fieldset>
+								<label for="project:name">Project name:</label>
+								<input type="text" id="project:name" class="input-xlarge">
+								
+								<label for="project:client">Client:</label>
+								<input type="text" id="project:client" class="input-xlarge">
+								
+								<label for="project:date">Date:</label>
+								<input type="text" id="project:date" class="input-xlarge">
+								
+								<label for="project:client_info">Client info:</label>
+								<textarea class="input-xlarge" id="project:client_info" rows="7"></textarea>
+								
+								<label for="project:req">Requested solution:</label>
+								<textarea class="input-xlarge" id="project:req" rows="7"></textarea>
+								
+								<!-- <button type="submit" class="btn btn-large btn-primary">Open project</button> -->
+							</fieldset>
+						</form>   
         </div>
-        <div class="span2">&nbsp;</div>
+        <div class="span4">
+        	<h3>Help</h3>
+        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac lorem ut purus rhoncus sollicitudin nec et libero. Suspendisse quis mi eros, ac varius magna. Sed pellentesque est in velit viverra tempus pulvinar neque tincidunt. Nam ut turpis metus, ac ornare augue. Nulla justo risus, facilisis eleifend consequat in, malesuada id dolor. Nunc consectetur eros in ante sagittis varius. Donec id eros ante. Sed sit amet dui dui. Nam in risus diam. In hac habitasse platea dictumst. Vivamus ut metus nec velit mattis volutpat et a ligula.</p>
+
+					<p>Quisque tincidunt ullamcorper dolor, at varius tellus porta in. Mauris sodales, metus eu fringilla fermentum, eros massa pharetra odio, quis volutpat nibh nibh in turpis. Aliquam sit amet sapien mauris. Vestibulum lacinia orci sed ante malesuada id posuere arcu convallis. Proin eu euismod enim. Nulla et sodales metus. Donec a lacus non lacus luctus bibendum tincidunt non nulla. Cras quis felis tellus. Pellentesque bibendum facilisis est sodales feugiat. Nullam vulputate auctor egestas.</p>
+        </div>
       </div>
-     	<div class="row">
-				<div class="span2">&nbsp;</div>
-        <div class="span4">
-        		<h3>Create a new project</h3>
-        		<form class="well">
-							<fieldset>
-								<label for="project:name">Project name:</label>
-								<input type="text" class="input-large" id="project:name">
-								
-								<label for="project:customer">Client:</label>
-								<input type="text" class="input-large" id="project:customer">
-								
-								<label for="project:description">Description:</label>
-								<textarea class="input-large" id="project:description" rows="5"></textarea>
-								
-            		<button type="submit" class="btn btn-large btn-success">Create project!</button>            		
-							</fieldset>
-						</form>       		
-        </div>
-        <div class="span4">
-        		<h3>Use an existing project</h3>
-        		<form class="well">
-							<fieldset>
-								<label for="project:name">Project name:</label>
-								<select class="input-large" id="project:name">
-									<option>Project 1</option>
-									<option>Project 2</option>
-									<option>Project 3</option>
-									<option>Project 4</option>
-								</select>
-								
-								<button type="submit" class="btn btn-large btn-primary">Open project</button>
-							</fieldset>
-						</form>    
-        </div>
-        <div class="span2">&nbsp;</div>        
-      </div>    
     </section>
     
-    <section id="overview">
-    </section>
 
     <section id="bm">
-      <div class="row">
+    	<div class="row"><h2>Business model analysis</h2></div>
+      <div class="row">      	
         <div class="span4">
         	<div class="box" id="vp">
           	<h3>Value Proposition</h3>
@@ -176,7 +162,14 @@
       </div>
     </section>
       
-    <section id="notes">    	
+    <section id="notes">
+    	<div class="row"><h2>Additional information</h2></div>
+    	<div class="row">
+    		<div class="span12">
+       		<span class="help-block">Additional information related to the project as a whole (stakeholders, documentation,&hellip;)</span>
+       		<textarea class="input-xlarge" id="input:notes" rows="8"></textarea>
+    		</div>
+    	</div>    	
     </section>
 
     <footer>
